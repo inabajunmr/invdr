@@ -60,8 +60,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Enemy" type="Node2D"]
-scale = Vector2(0.6, 0.6)
+[node name="Enemy" type="Node2D" groups=["enemy"]]
+scale = Vector2(0.3, 0.3)
 script = ExtResource("1_e1ltt")
 
 [node name="Area2D" type="Area2D" parent="."]
@@ -74,4 +74,3 @@ sprite_frames = SubResource("SpriteFrames_nnovl")
 animation = &"enemy3"
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -1,10 +1,10 @@
 extends Node2D
 
 @export var enemy_scene: PackedScene
-const COLUMNS = 20
-const ROWS = 2
-const H_SPACING = 120  # 横の間隔
-const V_SPACING = 120  # 縦の間隔
+const COLUMNS = 28
+const ROWS = 3
+const H_SPACING = 120
+const V_SPACING = 120
 const START_POS = Vector2(100, 100)  # 配置の開始位置
 
 func _ready() -> void:

@@ -14,3 +14,9 @@ config/name="invdr"
 run/main_scene="uid://cdvutebadx7hc"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1024
+window/size/viewport_height=2048
+window/size/resizable=false

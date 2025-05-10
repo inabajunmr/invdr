@@ -18,15 +18,3 @@ func _process(delta: float) -> void:
 	if position.x <= 30 or position.x >= screen_size.x - 30:
 		position.y += vertical_offset  # Move down
 		direction *= -1
-
-func _on_area_2d_area_entered(area: Area2D) -> void:
-	if is_hit:
-		return
-	print(area.get_parent().name)
-	if area.get_parent().name == "Bullet":
-		is_hit = true
-		queue_free()
-		area.get_parent().queue_free()
-	if area.get_parent().name == "Player":
-		# TODO something happen
-		pass

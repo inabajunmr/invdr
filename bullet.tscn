@@ -41,3 +41,5 @@ position = Vector2(-4, 8)
 sprite_frames = SubResource("SpriteFrames_t2bd8")
 animation = &"move"
 frame_progress = 0.248037
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
