@@ -28,6 +28,7 @@ animations = [{
 [node name="Bullet" type="Node2D"]
 scale = Vector2(0.3, 0.3)
 script = ExtResource("1_2b2rl")
+speed = null
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(2, -7)

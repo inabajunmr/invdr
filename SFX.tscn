@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://h5o1x7l38m5f"]
+
+[ext_resource type="Script" uid="uid://co05nlyhm1ybi" path="res://SFX.gd" id="1_7ftl1"]
+[ext_resource type="AudioStream" uid="uid://bwce7o8uatwx4" path="res://assets/collision.wav" id="1_qycp2"]
+
+[node name="SFX" type="Node2D"]
+script = ExtResource("1_7ftl1")
+
+[node name="CollisionWithEnemy" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_qycp2")
